@@ -8,6 +8,7 @@ body {
 /* Header Styles */
 .header {
     position: fixed;
+    margin-top: 8px;
     left: 0;
     top: 0;
     width: 100%;
@@ -26,17 +27,26 @@ body {
 }
 
 .header-left {
-    padding: 7px 10px 0px 0px;
+    margin-left: 10px;
+    margin-top: 7px;
 }
 
 .header-right {
-    padding: 7px 0px 0px 10px;
+    margin-top: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .header-link {
     padding-left: 15px;
     color: #000;
     opacity: 0.75;
+    cursor: pointer;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+    opacity: 0.7;
 }
 
 .header-button {
@@ -59,6 +69,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 }
 
 .main {
@@ -74,7 +85,7 @@ body {
 
 .search {
     width: 582px;
-    height: 34px;
+    height: 38px;
     border-radius: 24px;
     border: 1px solid #dfe1e5;
 }
@@ -90,7 +101,7 @@ body {
     margin: auto;
 }
 
-.button {
+.search-button {
     margin: 11px 4px;
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
@@ -102,6 +113,11 @@ body {
     min-width: 54px;
     text-align: center;
     cursor: pointer;
+}
+
+.search-button:hover {
+    border: 1px solid rgb(223,225,229);
+    color: #222;
 }
 
 /* Footer Styles */
@@ -136,6 +152,7 @@ body {
 .footer-link {
     margin: 0;
     padding-left: 27px;
+    cursor: pointer;
 }
 
 .footer-link:hover {
